@@ -13,7 +13,7 @@ export default function CardComponents({ data }) {
       title: "Detail User",
       content: (
         <div className={styles.modalInfo}>
-          <div>
+          <div className={styles.containerAvatar}>
             <Image
               src={detailData.picture.large}
               style={{ borderRadius: "50%" }}

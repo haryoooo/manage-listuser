@@ -9,4 +9,4 @@ this project is about manage list user that fetch from randomuser API
 
 ## Live on
 
-sites: manage-listuser.vercel.app
+sites: https://manage-listuser.vercel.app/

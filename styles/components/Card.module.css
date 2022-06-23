@@ -8,6 +8,10 @@
   margin-top: 30px;
 }
 
+.containerAvatar {
+  text-align: center;
+}
+
 .userInfo {
   margin-top: 10px;
   display: flex;
