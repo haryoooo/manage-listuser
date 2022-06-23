@@ -4,6 +4,7 @@ import styles from "../styles/components/Card.module.css";
 import { ageConverter } from "../helpers/ageConverter";
 import "antd/dist/antd.css";
 import moment from "moment";
+import Image from "next/image";
 const { Meta } = Card;
 
 export default function CardComponents({ data }) {
@@ -11,7 +12,16 @@ export default function CardComponents({ data }) {
     Modal.info({
       title: "Detail User",
       content: (
-        <div style={{ marginTop: 30 }}>
+        <div className={styles.modalInfo}>
+          <div>
+            <Image
+              src={detailData.picture.large}
+              style={{ borderRadius: "50%" }}
+              height={150}
+              width={150}
+              alt="avatar"
+            />
+          </div>
           <p className={styles.userInfo}>
             <strong>Name</strong>{" "}
             <span>{`${detailData.name.title} ${detailData.name.first} ${detailData.name.last}`}</span>
